@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Interface\Controller;
+namespace App\Controller;
 
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\Routing\Attribute\Route;

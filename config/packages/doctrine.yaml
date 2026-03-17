@@ -20,8 +20,8 @@ doctrine:
                     Postgresql:
                         type: attribute
                         is_bundle: false
-                        dir: '%kernel.project_dir%/src/Infrastructure/Entity/Postgresql'
-                        prefix: 'App\Infrastructure\Entity\Postgresql'
+                        dir: '%kernel.project_dir%/src/Entity'
+                        prefix: 'App\Entity'
                         alias: Postgresql
             mysql:
                 connection: mysql
@@ -31,6 +31,6 @@ doctrine:
                     Mysql:
                         type: attribute
                         is_bundle: false
-                        dir: '%kernel.project_dir%/src/Infrastructure/Entity/Mysql'
-                        prefix: 'App\Infrastructure\Entity\Mysql'
+                        dir: '%kernel.project_dir%/src/Entity'
+                        prefix: 'App\Entity'
                         alias: Mysql

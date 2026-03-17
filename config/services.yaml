@@ -7,5 +7,5 @@ services:
         resource: '../src/'
         exclude:
             - '../src/DependencyInjection/'
-            - '../src/Infrastructure/Entity/'
+            - '../src/Entity/'
             - '../src/Kernel.php'
