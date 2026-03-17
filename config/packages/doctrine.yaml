@@ -1,0 +1,36 @@
+doctrine:
+    dbal:
+        default_connection: postgresql
+        connections:
+            postgresql:
+                url: '%env(resolve:DATABASE_POSTGRESQL_URL)%'
+            mysql:
+                url: '%env(resolve:DATABASE_MYSQL_URL)%'
+
+    orm:
+        auto_generate_proxy_classes: true
+        enable_lazy_ghost_objects: true
+        default_entity_manager: postgresql
+        entity_managers:
+            postgresql:
+                connection: postgresql
+                naming_strategy: doctrine.orm.naming_strategy.underscore_number_aware
+                auto_mapping: false
+                mappings:
+                    Postgresql:
+                        type: attribute
+                        is_bundle: false
+                        dir: '%kernel.project_dir%/src/Infrastructure/Entity/Postgresql'
+                        prefix: 'App\Infrastructure\Entity\Postgresql'
+                        alias: Postgresql
+            mysql:
+                connection: mysql
+                naming_strategy: doctrine.orm.naming_strategy.underscore_number_aware
+                auto_mapping: false
+                mappings:
+                    Mysql:
+                        type: attribute
+                        is_bundle: false
+                        dir: '%kernel.project_dir%/src/Infrastructure/Entity/Mysql'
+                        prefix: 'App\Infrastructure\Entity\Mysql'
+                        alias: Mysql

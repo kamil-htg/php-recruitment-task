@@ -1,0 +1,5 @@
+doctrine_migrations:
+    migrations_paths:
+        'App\Migrations\Postgresql': '%kernel.project_dir%/migrations/postgresql'
+        'App\Migrations\Mysql': '%kernel.project_dir%/migrations/mysql'
+    enable_profiler: false
