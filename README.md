@@ -1,5 +1,7 @@
 # URL Shortener -- Senior PHP Developer Live Coding Task
 
+Build a URL shortener API using Symfony. The application accepts URLs from two supported domains and persists each to a different database (PostgreSQL or MySQL) based on the domain. A test suite is provided in `tests/` -- all tests are currently failing and your goal is to make them pass.
+
 ## Requirements
 
 ### Core (must complete)
