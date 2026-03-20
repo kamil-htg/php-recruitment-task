@@ -8,7 +8,7 @@ Build a URL shortener API using Symfony. The application accepts URLs from two s
 
 1. **POST /api/shorten** -- Create a shortened URL
    - Request body: `{ "url": "https://code.claude.com/docs/en/overview" }`
-   - Returns 201 with `{ "short_code": "abc123", "original_url": "https://...", "expires_at": "..." }`
+   - Returns 201 with `{ "id": 1, "short_code": "abc123", "original_url": "https://...", "expires_at": "..." }`
 
 2. **GET /api/evaluate/{shortCode}** -- Redirect to the original URL
    - Returns 302 redirect to the original URL
@@ -32,7 +32,7 @@ Build a URL shortener API using Symfony. The application accepts URLs from two s
 
 6. **GET /api/urls** -- List all non-expired shortened URLs
    - Returns 200 with an array of active (non-expired) shortened URLs from all databases
-   - Each entry contains: `short_code`, `original_url`, `expires_at`
+   - Each entry contains: `id`, `short_code`, `original_url`, `expires_at`
    - URLs whose `expires_at` is in the past must be excluded
 
 ## Useful Commands
