@@ -30,6 +30,11 @@ Build a URL shortener API using Symfony. The application accepts URLs from two s
    - Every shortened URL gets an `expires_at` timestamp calculated from creation time + TTL
    - Expired URLs return 410 Gone on redirect
 
+6. **GET /api/urls** -- List all non-expired shortened URLs
+   - Returns 200 with an array of active (non-expired) shortened URLs from all databases
+   - Each entry contains: `short_code`, `original_url`, `expires_at`
+   - URLs whose `expires_at` is in the past must be excluded
+
 ## Useful Commands
 
 ```bash
