@@ -7,7 +7,7 @@ start:
 	@echo "Application is running at http://localhost:8080"
 	@echo "Health check: http://localhost:8080/health"
 
-down:
+stop:
 	docker compose down
 
 test:
