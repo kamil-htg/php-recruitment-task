@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace App\NotRelevant\DTO;
 
-final readonly class Item
+final readonly class Apple
 {
     public function __construct(
-        public string $name,
-        public int $quantity,
+        public string $variety,
+        public float $weightGrams,
     ) {
     }
 }
