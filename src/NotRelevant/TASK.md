@@ -13,6 +13,12 @@ Currently `Basket` holds its fruit as plain untyped arrays. Your task is to buil
 
 ---
 
+## Before You Code
+
+Discuss: You're about to implement two near-identical collection classes. What pattern would allow adding `OrangeCollection`, `MangoCollection`, etc. without duplicating the class body each time?
+
+---
+
 ## Requirements
 
 ### 1. Implement `AppleCollection`
